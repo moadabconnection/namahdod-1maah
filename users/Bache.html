@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مودب‌کانکشن | سرویس شما</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🤖</text></svg>">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Vazirmatn',Tahoma,sans-serif;direction:rtl;text-align:right;
+background:radial-gradient(1400px 700px at 85% -20%,#7c3aed33,transparent 55%),
+radial-gradient(1000px 600px at 5% 115%,#2563eb2e,transparent 55%),#070a14;
+color:#e8ecf6;min-height:100vh;display:flex;justify-content:center;padding:26px 14px}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;
+background-image:linear-gradient(#ffffff06 1px,transparent 1px),
+linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:44px 44px;
+mask-image:radial-gradient(ellipse 80% 60% at 50% 40%,#000 30%,transparent 75%)}
+.card{position:relative;width:100%;max-width:460px;background:#0e1626ee;
+border:1px solid #2a3554;border-radius:26px;padding:28px 24px;
+backdrop-filter:blur(16px);box-shadow:0 24px 80px #00000077,inset 0 1px 0 #ffffff12;
+align-self:flex-start;margin-top:8px;animation:rise .6s cubic-bezier(.2,.9,.3,1.1)}
+@keyframes rise{from{opacity:0;transform:translateY(24px) scale(.98)}to{opacity:1;transform:none}}
+.card::before{content:'';position:absolute;inset:-1px;border-radius:26px;z-index:-1;
+background:linear-gradient(135deg,#3b82f655,#8b5cf655,#3b82f622,#8b5cf622);
+filter:blur(14px);opacity:.7}
+.brand{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.logo{width:58px;height:58px;border-radius:16px;display:flex;align-items:center;
+justify-content:center;font-size:32px;flex-shrink:0;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+box-shadow:0 8px 24px #2563eb66,inset 0 1px 0 #ffffff44}
+.brand h1{font-size:22px;font-weight:900;
+background:linear-gradient(90deg,#93c5fd,#c4b5fd,#93c5fd);background-size:200%;
+-webkit-background-clip:text;background-clip:text;color:transparent;
+animation:sheen 4s linear infinite}
+@keyframes sheen{to{background-position:200%}}
+.brand small{color:#8b93ad;font-size:11.5px;display:block;margin-top:2px}
+.row{display:flex;justify-content:space-between;align-items:center;
+padding:12px 6px;border-bottom:1px dashed #26304d;font-size:14px}
+.row:last-of-type{border-bottom:none}
+.row .k{color:#8b93ad;font-weight:500;display:flex;align-items:center;gap:6px}
+.row .v{font-weight:700}
+.badge{display:inline-block;padding:4px 14px;border-radius:999px;font-size:12.5px;
+font-weight:700}
+.badge.ok{background:#052e1acc;color:#34d399;border:1px solid #065f46;
+box-shadow:0 0 14px #34d39933}
+.badge.off{background:#2e0a0acc;color:#f87171;border:1px solid #7f1d1d}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
+padding:14px;border-radius:15px;border:none;font-size:15px;font-weight:700;
+font-family:inherit;cursor:pointer;margin-top:10px;text-decoration:none;color:#fff;
+transition:transform .15s,filter .15s}
+.btn:active{transform:scale(.97)}
+.btn:hover{filter:brightness(1.12)}
+.btn-primary{position:relative;overflow:hidden;
+background:linear-gradient(135deg,#2563eb,#7c3aed);box-shadow:0 10px 30px #2563eb55}
+.btn-primary::after{content:'';position:absolute;top:0;left:-80%;width:60%;height:100%;
+background:linear-gradient(105deg,transparent,#ffffff55,transparent);
+transform:skewX(-20deg);animation:shimmer 2.8s infinite}
+@keyframes shimmer{0%{left:-80%}60%,100%{left:130%}}
+.btn-ghost{background:#161f36;color:#cbd5f5;border:1px solid #2a3554}
+.btn-ghost:hover{background:#1c2642}
+.links{display:flex;gap:8px;margin-top:18px}
+.links a{flex:1;text-align:center;padding:11px 6px;border-radius:13px;font-size:13px;
+background:#0f1626;border:1px solid #26304d;color:#93a4d8;text-decoration:none;transition:.15s}
+.links a:hover{color:#fff;border-color:#3b82f6;background:#14203c;transform:translateY(-1px)}
+.configs{margin-top:14px;display:none;max-height:280px;overflow:auto;padding-left:2px}
+.configs.open{display:block;animation:rise .3s}
+.configs::-webkit-scrollbar{width:6px}
+.configs::-webkit-scrollbar-thumb{background:#2a3554;border-radius:3px}
+.cfg{background:#0a1120;border:1px solid #1f2c4d;border-radius:11px;padding:10px 11px;
+margin-bottom:8px;font-size:11.5px;word-break:break-all;direction:ltr;text-align:left;
+font-family:ui-monospace,Consolas,monospace;color:#9fb3e8}
+.cfg b{color:#7dd3fc;display:block;margin-bottom:5px;direction:rtl;text-align:right;
+font-family:'Vazirmatn',sans-serif;font-size:12.5px}
+.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(20px);
+background:linear-gradient(135deg,#10b981,#059669);color:#03291c;font-weight:700;
+padding:11px 24px;border-radius:999px;opacity:0;pointer-events:none;transition:.25s;
+box-shadow:0 12px 32px #00000077;z-index:9}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.qr{display:flex;justify-content:center;margin-top:16px}
+.qr img{width:190px;height:190px;border-radius:16px;border:5px solid #1e2a48;
+background:#fff;padding:6px;box-shadow:0 10px 30px #00000066}
+footer{margin-top:20px;text-align:center;color:#5b6584;font-size:11.5px;line-height:1.7}
+footer b{color:#8b93ad}
+.pulse{width:8px;height:8px;border-radius:50%;background:#34d399;
+box-shadow:0 0 0 0 #34d39988;animation:pulse 2s infinite;display:inline-block;margin-left:5px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #34d39977}70%{box-shadow:0 0 0 9px #34d39900}100%{box-shadow:0 0 0 0 #34d39900}}
+</style></head>
+<body>
+<div class="card">
+  <div class="brand">
+    <div class="logo">🤖</div>
+    <div><h1>مودب‌کانکشن</h1><small>سرویس اشتراک شما</small></div>
+  </div>
+
+  <div class="row"><span class="k">👤 مشترک</span><span class="v">آقای مودب (online)</span></div>
+  <div class="row"><span class="k">🟢 سرویس</span><span class="v">🛠 دستی - نامحدود - 1000 روز</span></div>
+  <div class="row"><span class="k">📦 حجم</span><span class="v">نامحدود ♾️</span></div>
+  <div class="row"><span class="k">⏳ باقی‌مانده</span><span class="v" id="days">—</span></div>
+  <div class="row"><span class="k">📅 انقضا</span><span class="v">2029/06/23</span></div>
+  <div class="row"><span class="k">📌 وضعیت</span><span class="v" id="st"><span class="pulse"></span><span class="badge ok">🟢 فعال</span></span></div>
+
+  <button class="btn btn-primary" onclick="copyLink()">🔗 کپی لینک اشتراک</button>
+  <button class="btn btn-ghost" onclick="copyAll()">📋 کپی همه کانفیگ‌ها</button>
+  <button class="btn btn-ghost" onclick="toggleConfigs()">👁 نمایش همه کانفیگ‌ها (15)</button>
+
+  <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=360x360&data=https%3A%2F%2Fraw.githubusercontent.com%2Fmoadabconnection%2Fnamahdod-1maah%2Fmain%2Fusers%2FBache.txt" alt="QR"></div>
+
+  <div class="configs" id="cfgs"><div class="cfg"><b>🔵 مودب‌کانکشن | tg8576841783_o120</b>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPQml5V201YS0wTGFVWkFqZlozVTZydEVlOFBacW5SNg==@Namahdod:1080#%F0%9F%94%B5%20%D9%85%D9%88%D8%AF%D8%A8%E2%80%8C%DA%A9%D8%A7%D9%86%DA%A9%D8%B4%D9%86%20%7C%20tg8576841783_o120</div><div class="cfg"><b>⌛ 990 روز مونده</b>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPQml5V201YS0wTGFVWkFqZlozVTZydEVlOFBacW5SNg==@ut:1080#%E2%8C%9B%20990%20%D8%B1%D9%88%D8%B2%20%D9%85%D9%88%D9%86%D8%AF%D9%87</div><div class="cfg"><b>🔄 لطفاً هر روز ساب رو آپدیت کنید</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@Film.moblemangol.ir:29888?encryption=none&amp;security=none&amp;type=ws&amp;headerType=none&amp;path=%2F&amp;host=MYket.ir#%F0%9F%94%84%20%D9%84%D8%B7%D9%81%D8%A7%D9%8B%20%D9%87%D8%B1%20%D8%B1%D9%88%D8%B2%20%D8%B3%D8%A7%D8%A8%20%D8%B1%D9%88%20%D8%A2%D9%BE%D8%AF%DB%8C%D8%AA%20%DA%A9%D9%86%DB%8C%D8%AF</div><div class="cfg"><b>🇸🇪 𝑺𝑬 • 𝑪𝑫𝑵</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@moblemangol.ir:2053?encryption=none&amp;security=tls&amp;type=ws&amp;headerType=none&amp;path=%2Fapi%2Fapi.php&amp;host=Ksososbssn00wnendnmmmehsvwyw999999ejns.goodphilips.ir&amp;sni=Ksososbssn00wnendnmmmehsvwyw999999ejns.goodphilips.ir&amp;fp=chrome&amp;alpn=h2&amp;ech=cloudflare-ech.com%2Budp%3A%2F%2F1.1.1.1#%F0%9F%87%B8%F0%9F%87%AA%20%F0%9D%91%BA%F0%9D%91%AC%20%E2%80%A2%20%F0%9D%91%AA%F0%9D%91%AB%F0%9D%91%B5</div><div class="cfg"><b>🇨🇦 𝑪𝑨 • 𝑫𝑰𝑹𝑬𝑪𝑻</b>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpPQml5V201YS0wTGFVWkFqZlozVTZydEVlOFBacW5SNg==@Shalaloo.moblemangol.ir:1080#%F0%9F%87%A8%F0%9F%87%A6%20%F0%9D%91%AA%F0%9D%91%A8%20%E2%80%A2%20%F0%9D%91%AB%F0%9D%91%B0%F0%9D%91%B9%F0%9D%91%AC%F0%9D%91%AA%F0%9D%91%BB</div><div class="cfg"><b>🇨🇦 𝑪𝑨 • 𝑪𝑫𝑵</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@moblemangol.ir:2053?encryption=none&amp;security=tls&amp;type=ws&amp;headerType=none&amp;path=%2Fapi%2Fapi.php&amp;host=Sksnsb777qhabbHahababBbhh891jmsmsosps.goodphilips.ir&amp;sni=Sksnsb777qhabbHahababBbhh891jmsmsosps.goodphilips.ir&amp;fp=firefox&amp;alpn=h2&amp;ech=cloudflare-ech.com%2Budp%3A%2F%2F1.1.1.1#%F0%9F%87%A8%F0%9F%87%A6%20%F0%9D%91%AA%F0%9D%91%A8%20%E2%80%A2%20%F0%9D%91%AA%F0%9D%91%AB%F0%9D%91%B5</div><div class="cfg"><b>🇵🇱 𝑷𝑳 • 𝑫𝑰𝑹𝑬𝑪𝑻</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@ZX.gotkhersi.ir:29888?encryption=none&amp;security=none&amp;type=ws&amp;headerType=none&amp;path=%2F#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9D%91%B7%F0%9D%91%B3%20%E2%80%A2%20%F0%9D%91%AB%F0%9D%91%B0%F0%9D%91%B9%F0%9D%91%AC%F0%9D%91%AA%F0%9D%91%BB</div><div class="cfg"><b>🇵🇱 𝑷𝑳 • 𝑪𝑫𝑵</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@moblemangol.ir:2053?encryption=none&amp;security=tls&amp;type=ws&amp;headerType=none&amp;path=%2Fapi%2Fapi.php&amp;host=Yh8yjugughihohoxyys5s4atdgijoojihufftdyfydfugi.musick-up.xyz&amp;sni=Yh8yjugughihohoxyys5s4atdgijoojihufftdyfydfugi.musick-up.xyz&amp;fp=chrome&amp;alpn=h2&amp;ech=cloudflare-ech.com%2Budp%3A%2F%2F1.1.1.1#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9D%91%B7%F0%9D%91%B3%20%E2%80%A2%20%F0%9D%91%AA%F0%9D%91%AB%F0%9D%91%B5</div><div class="cfg"><b>🇪🇸 𝑺𝑷 • 𝑫𝑰𝑹𝑬𝑪𝑻</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@Alalo.moblemangol.ir:29888?encryption=none&amp;security=none&amp;type=ws&amp;headerType=none&amp;path=%2F#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9D%91%BA%F0%9D%91%B7%20%E2%80%A2%20%F0%9D%91%AB%F0%9D%91%B0%F0%9D%91%B9%F0%9D%91%AC%F0%9D%91%AA%F0%9D%91%BB</div><div class="cfg"><b>🇪🇸 𝑺𝑷 • 𝑪𝑫𝑵</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@ns.zabidat.ir:8443?encryption=none&amp;security=tls&amp;type=xhttp&amp;headerType=none&amp;path=%2Fapi%2Fapi%2Fapi&amp;host=Yodyoxpydoyd96d6969dpycypvuvur44oyoyfyodtisejebe8ebe.musick-up.xyz&amp;mode=auto&amp;sni=Yodyoxpydoyd96d6969dpycypvuvur44oyoyfyodtisejebe8ebe.musick-up.xyz&amp;fp=chrome&amp;alpn=h2&amp;ech=cloudflare-ech.com%2Budp%3A%2F%2F1.1.1.1#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9D%91%BA%F0%9D%91%B7%20%E2%80%A2%20%F0%9D%91%AA%F0%9D%91%AB%F0%9D%91%B5</div><div class="cfg"><b>🇨🇵 Franch</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@moblemangol.ir:2053?encryption=none&amp;security=tls&amp;type=ws&amp;headerType=none&amp;path=%2Fapi%2Fapi.php&amp;host=7fc8tc8tct8c8tcy8c8y556u8yv8yyy89vyyc9v8yc8yc8txt8.zendegizibast.ir&amp;sni=7fc8tc8tct8c8tcy8c8y556u8yv8yyy89vyyc9v8yc8yc8txt8.zendegizibast.ir&amp;fp=chrome&amp;alpn=h2&amp;ech=cloudflare-ech.com%2Budp%3A%2F%2F1.1.1.1#%F0%9F%87%A8%F0%9F%87%B5%20Franch</div><div class="cfg"><b>🇫🇮 𝑭𝑰 • 𝑪𝑫𝑵</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@moblemangol.ir:8443?encryption=none&amp;security=tls&amp;type=xhttp&amp;headerType=none&amp;path=%2Fapi%2Fapi%2Fapi&amp;host=8g8yvv8g8yc9yc9yvyv9yxd5xyyviboif5d7xt8c8c8.zendegizibast.ir&amp;mode=auto&amp;sni=8g8yvv8g8yc9yc9yvyv9yxd5xyyviboif5d7xt8c8c8.zendegizibast.ir&amp;fp=chrome&amp;alpn=h2&amp;ech=cloudflare-ech.com%2Budp%3A%2F%2F1.1.1.1#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9D%91%AD%F0%9D%91%B0%20%E2%80%A2%20%F0%9D%91%AA%F0%9D%91%AB%F0%9D%91%B5</div><div class="cfg"><b>🇩🇪 𝑫𝑬 • 𝑪𝑫𝑵</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@moblemangol.ir:2053?encryption=none&amp;security=tls&amp;type=ws&amp;headerType=none&amp;path=%2Fapi%2Fapi.php&amp;host=7gyv8yv7gvgvv77gtcycvubnoin7ftc8cg8gvv88g.zendegizibast.ir&amp;sni=7gyv8yv7gvgvv77gtcycvubnoin7ftc8cg8gvv88g.zendegizibast.ir&amp;fp=chrome&amp;alpn=h2&amp;ech=cloudflare-ech.com%2Budp%3A%2F%2F1.1.1.1#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9D%91%AB%F0%9D%91%AC%20%E2%80%A2%20%F0%9D%91%AA%F0%9D%91%AB%F0%9D%91%B5</div><div class="cfg"><b>🇮🇷→🇩🇪 𝑫𝑬●𝑻𝒖𝒏×²</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@deram.moblemangol.ir:2096?encryption=none&amp;security=tls&amp;type=ws&amp;headerType=none&amp;path=%2F&amp;host=dash.zendegizibast.ir&amp;sni=dash.zendegizibast.ir&amp;fp=chrome#%F0%9F%87%AE%F0%9F%87%B7%E2%86%92%F0%9F%87%A9%F0%9F%87%AA%20%F0%9D%91%AB%F0%9D%91%AC%E2%97%8F%F0%9D%91%BB%F0%9D%92%96%F0%9D%92%8F%C3%97%C2%B2</div><div class="cfg"><b>🇮🇷→🇸🇪𝑺𝑬•𝑻𝒖𝒏×²</b>vless://2e6c3ef3-6ea8-4df3-89a2-8f9e8f92688a@deram.moblemangol.ir:2087?encryption=none&amp;security=tls&amp;type=ws&amp;headerType=none&amp;path=%2F&amp;host=dash.zendegizibast.ir&amp;sni=dash.zendegizibast.ir&amp;fp=chrome#%F0%9F%87%AE%F0%9F%87%B7%E2%86%92%F0%9F%87%B8%F0%9F%87%AA%F0%9D%91%BA%F0%9D%91%AC%E2%80%A2%F0%9D%91%BB%F0%9D%92%96%F0%9D%92%8F%C3%97%C2%B2</div></div>
+
+  <div class="links">
+    <a href="https://t.me/Aghayemoadab">💬 پشتیبانی</a>
+    <a href="https://t.me/moadabconnection">📢 کانال</a>
+    <a href="https://t.me/moadabconnection_bot">🤖 ربات</a>
+  </div>
+  <footer>🔗 این لینک رو هم می‌تونی <b>تو مرورگر</b> باز کنی هم <b>تو برنامه VPN</b> کپی کنی.</footer>
+</div>
+<div class="toast" id="toast">کپی شد ✅</div>
+<script>
+const EXPIRES = "2029-06-23T20:05:33Z";
+const SUB_URL = "https://raw.githubusercontent.com/moadabconnection/namahdod-1maah/main/users/Bache.txt";
+const RAW_URL = "https://raw.githubusercontent.com/moadabconnection/namahdod-1maah/main/users/Bache.txt";
+(function(){const d=(new Date(EXPIRES)-new Date())/864e5;const n=Math.max(0,Math.ceil(d));
+const e=document.getElementById('days');
+e.textContent=n>0?(n+' روز'):'منقضی شده ⛔️';
+if(n<=0){document.getElementById('st').innerHTML='<span class="badge off">🔴 منقضی شده</span>';}})();
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1800);}
+async function copyText(txt){try{await navigator.clipboard.writeText(txt);toast('کپی شد ✅');}catch(e){const i=document.createElement('textarea');i.value=txt;document.body.appendChild(i);i.select();document.execCommand('copy');i.remove();toast('کپی شد ✅');}}
+function copyLink(){copyText(SUB_URL);}
+async function copyAll(){try{const r=await fetch(RAW_URL);const t=await r.text();copyText(t);}catch(e){copyText(SUB_URL);}}
+function toggleConfigs(){document.getElementById('cfgs').classList.toggle('open');}
+</script>
+</body></html>
