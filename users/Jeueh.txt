@@ -66,7 +66,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "um2162vdog.gadawebi.ir",
+                            "address": "pdsupm16nq.gadawebi.ir",
                             "port": 1080,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -162,7 +162,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "l87pdc644n.gadawebi.ir",
+                            "address": "hnrngdndsj.gadawebi.ir",
                             "port": 1080,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -258,7 +258,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "cmw19rhk0q.gadawebi.ir",
+                            "address": "dr0w9x87gj.gadawebi.ir",
                             "port": 5056,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -354,7 +354,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "d9js2780zv.gadawebi.ir",
+                            "address": "y2g65fkplo.gadawebi.ir",
                             "port": 5060,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -450,7 +450,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "xzkmbsrlrm.gadawebi.ir",
+                            "address": "cq8h228vgy.gadawebi.ir",
                             "port": 58965,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -546,103 +546,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "qk680dbzaq.gadawebi.ir",
-                            "port": 5051,
-                            "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
-                            "method": "chacha20-ietf-poly1305"
-                        }
-                    ]
-                }
-            },
-            {
-                "protocol": "freedom",
-                "tag": "DIRECT"
-            },
-            {
-                "protocol": "blackhole",
-                "tag": "BLOCK"
-            }
-        ],
-        "dns": {
-            "servers": [
-                "1.1.1.1",
-                "8.8.8.8"
-            ]
-        },
-        "routing": {
-            "domainStrategy": "AsIs",
-            "rules": []
-        },
-        "remarks": "\ud83c\uddeb\ud83c\uddee Finland"
-    },
-    {
-        "log": {
-            "access": "",
-            "error": "",
-            "loglevel": "warning"
-        },
-        "policy": {
-            "system": {
-                "statsOutboundDownlink": true,
-                "statsOutboundUplink": true
-            },
-            "levels": {
-                "8": {
-                    "connIdle": 300,
-                    "downlinkOnly": 1,
-                    "handshake": 4,
-                    "uplinkOnly": 1
-                }
-            }
-        },
-        "inbounds": [
-            {
-                "tag": "socks",
-                "port": 10808,
-                "listen": "0.0.0.0",
-                "protocol": "socks",
-                "sniffing": {
-                    "enabled": true,
-                    "destOverride": [
-                        "http",
-                        "tls"
-                    ],
-                    "routeOnly": false
-                },
-                "settings": {
-                    "auth": "noauth",
-                    "udp": true,
-                    "allowTransparent": false
-                }
-            },
-            {
-                "tag": "http",
-                "port": 10809,
-                "listen": "0.0.0.0",
-                "protocol": "http",
-                "sniffing": {
-                    "enabled": true,
-                    "destOverride": [
-                        "http",
-                        "tls"
-                    ],
-                    "routeOnly": false
-                },
-                "settings": {
-                    "auth": "noauth",
-                    "udp": true,
-                    "allowTransparent": false
-                }
-            }
-        ],
-        "outbounds": [
-            {
-                "protocol": "shadowsocks",
-                "tag": "proxy",
-                "settings": {
-                    "servers": [
-                        {
-                            "address": "dh172ta8z1.gadawebi.ir",
+                            "address": "fppw6ssj14.gadawebi.ir",
                             "port": 5072,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -738,7 +642,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "gqr5q7qhzm.gadawebi.ir",
+                            "address": "b11lbxg0is.gadawebi.ir",
                             "port": 5068,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -834,7 +738,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "hx4kuyw4jo.gadawebi.ir",
+                            "address": "p60zfqzydr.gadawebi.ir",
                             "port": 5053,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -930,7 +834,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "xrb4wxguio.gadawebi.ir",
+                            "address": "xfeun5o2w6.gadawebi.ir",
                             "port": 5066,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1026,7 +930,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "h6urszih5c.gadawebi.ir",
+                            "address": "tn2upibgdl.gadawebi.ir",
                             "port": 5052,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1122,7 +1026,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "qlsstjjmvq.gadawebi.ir",
+                            "address": "eyfrzsi6et.gadawebi.ir",
                             "port": 5069,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1218,7 +1122,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "jpw0hy4kei.gadawebi.ir",
+                            "address": "ayt3oe3ga9.gadawebi.ir",
                             "port": 5071,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1314,7 +1218,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "yn317wl9ui.gadawebi.ir",
+                            "address": "pz67dz5z3x.gadawebi.ir",
                             "port": 5070,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1410,7 +1314,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "ltso13fpo1.gadawebi.ir",
+                            "address": "zhzzeyv90b.gadawebi.ir",
                             "port": 5065,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1506,7 +1410,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "kl5wsvh7oe.gadawebi.ir",
+                            "address": "h697sqfn1o.gadawebi.ir",
                             "port": 5058,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1602,7 +1506,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "xm4xcrgsui.gadawebi.ir",
+                            "address": "b6u2xzw1tc.gadawebi.ir",
                             "port": 5067,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1698,7 +1602,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "t4tonxz1hs.gadawebi.ir",
+                            "address": "keplvf0rwv.gadawebi.ir",
                             "port": 5063,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1794,7 +1698,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "mikal8f33d.gadawebi.ir",
+                            "address": "cdsa2husat.gadawebi.ir",
                             "port": 5055,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1890,7 +1794,103 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "dcrne5hhla.gadawebi.ir",
+                            "address": "s5d2jutxa5.gadawebi.ir",
+                            "port": 5051,
+                            "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
+                            "method": "chacha20-ietf-poly1305"
+                        }
+                    ]
+                }
+            },
+            {
+                "protocol": "freedom",
+                "tag": "DIRECT"
+            },
+            {
+                "protocol": "blackhole",
+                "tag": "BLOCK"
+            }
+        ],
+        "dns": {
+            "servers": [
+                "1.1.1.1",
+                "8.8.8.8"
+            ]
+        },
+        "routing": {
+            "domainStrategy": "AsIs",
+            "rules": []
+        },
+        "remarks": "\ud83c\uddeb\ud83c\uddee Finland"
+    },
+    {
+        "log": {
+            "access": "",
+            "error": "",
+            "loglevel": "warning"
+        },
+        "policy": {
+            "system": {
+                "statsOutboundDownlink": true,
+                "statsOutboundUplink": true
+            },
+            "levels": {
+                "8": {
+                    "connIdle": 300,
+                    "downlinkOnly": 1,
+                    "handshake": 4,
+                    "uplinkOnly": 1
+                }
+            }
+        },
+        "inbounds": [
+            {
+                "tag": "socks",
+                "port": 10808,
+                "listen": "0.0.0.0",
+                "protocol": "socks",
+                "sniffing": {
+                    "enabled": true,
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "routeOnly": false
+                },
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true,
+                    "allowTransparent": false
+                }
+            },
+            {
+                "tag": "http",
+                "port": 10809,
+                "listen": "0.0.0.0",
+                "protocol": "http",
+                "sniffing": {
+                    "enabled": true,
+                    "destOverride": [
+                        "http",
+                        "tls"
+                    ],
+                    "routeOnly": false
+                },
+                "settings": {
+                    "auth": "noauth",
+                    "udp": true,
+                    "allowTransparent": false
+                }
+            }
+        ],
+        "outbounds": [
+            {
+                "protocol": "shadowsocks",
+                "tag": "proxy",
+                "settings": {
+                    "servers": [
+                        {
+                            "address": "rx0thoteh8.gadawebi.ir",
                             "port": 5057,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -1986,7 +1986,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "dweq0v7j6e.gadawebi.ir",
+                            "address": "w617leg03p.gadawebi.ir",
                             "port": 5064,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -2082,7 +2082,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "xvd3h6j5ho.gadawebi.ir",
+                            "address": "bi3xjusr5f.gadawebi.ir",
                             "port": 5054,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -2178,7 +2178,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "fwrh2kvnj3.gadawebi.ir",
+                            "address": "jtcv4676ow.gadawebi.ir",
                             "port": 5062,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -2274,7 +2274,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "rdrgiqrotr.gadawebi.ir",
+                            "address": "hifemruhu7.gadawebi.ir",
                             "port": 5050,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -2370,7 +2370,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "haieoqj41a.gadawebi.ir",
+                            "address": "p55amegc9n.gadawebi.ir",
                             "port": 5059,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
@@ -2466,7 +2466,7 @@
                 "settings": {
                     "servers": [
                         {
-                            "address": "weqhdtqogy.gadawebi.ir",
+                            "address": "qdury2q3m7.gadawebi.ir",
                             "port": 5061,
                             "password": "JMfCMe1N3fBxc8b14qtzYDj3_cXDbVsN",
                             "method": "chacha20-ietf-poly1305"
